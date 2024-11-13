@@ -45,7 +45,7 @@ function Home() {
 
   //MOVIE API
   function movieDiscoverAPI() {
-        fetch(`http://localhost:3000/movies`)
+        fetch(`https://mymovies-sepia.vercel.app/movies`)
           .then(response => response.json())
           .then(data => {
             setDiscoverMovies(data.movies)
